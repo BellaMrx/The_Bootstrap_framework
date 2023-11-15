@@ -223,6 +223,7 @@ The same website with the use of Bootstrap:
 
  <img src="images/Bootstrap_part-4.png" width="800">
 
+Here, the entire content is placed in the `.container` class. The layout was created line by line in this class. The `header` element was placed in the first line and the `nav` element in the next line. Both elements extend over all 12 columns of the class `.row` because of the class `.col-md-12`. In the third row, three elements with the class `.col-md-4` have been placed, each on three columns in the row. The fourth row contains two `article` elements with `.col-md-6` on two columns each. The last line contains the footer which behaves in the same way as the header. The class `.img-fluid` in `<img src="images/....jpg" alt="..." class="img-fluid">` ensures that Bootstrap automatically adjusts an image to the parent element.
 
 With bootstraps, for example, the images are displayed side by side instead of one below the other if the screen size is wide enough. In the mobile view, the images are automatically displayed one below the other. This is an advantage of Bootstrap, as you don't have to write any media queries yourself. The viewport meta tag was added here so that zooming is possible on mobile devices.
 
@@ -248,3 +249,39 @@ A quick overview of how the layout is realized with Bootstrap:
     </div>
    ```
 
+3. The actual content is placed in the columns of the `.row` class. Bootstrap offers many different classes for this purpose. The grid is specified via class names, e.g. `.col-md-x`, the `x` stands for the number of 12 available columns. The `md` stands for medium-sized devices such as desktop PCs with a screen size of 768 pixels or more. If the class `.col-md-8` is used for an element, this element occupies 8 columns of the 12 available columns in a cell. If two elements with the class `.col-md-6` are packed into a row of the class `.row`, the two elements are created in two columns of the same size. The grid system of Bootstrap was realized with Flexbox.
+
+   ```
+    <div class="container">
+        <div class="row">
+            <header class="col-md-12">...</header>
+        </div>
+        <div class="row">
+            <article class="col-md-4">...</article>   
+            <article class="col-md-4">...</article>
+            <article class="col-md-4">...</article>    
+        </div>
+        <div class="row">
+            <article class="col-md-8">...</article> 
+            <article class="col-md-4">...</article> 
+        </div>
+        ...
+    </div>
+   ```
+
+Bootstrap offers even more raster classes besides `.col-md-x`. There are also the classes `.col-xs-x`, `.col-sm-x` and `.col-lg-x`, which work accordingly on the different devices.
+
+| Class Prefix | Device       |
+| ------------ | ------------ |
+| `.col-`      | extra-small devices such as smartphones with a screen smaller than 576 px |
+| `.col-sm-`   | small devices such as smartphones or tablets with a screen size greater than or equal to 576 px |
+| `.col-md-`   | medium-sized devices such as tablets or desktop PCs with a screen size greater than or equal to 768px |
+| `.col-lg-`   | large devices such as tablets or desktop PCs with a screen size greater than or equal to 960 px |
+| `.col-xl-`   | large devices such as desktop PC with a screen larger than or equal to 1200 px |
+| `.col-xxl-`  | extra-large devices such as desktop PCs with a screen larger than or equal to 1400 px |
+
+The class `.col-md-x` is used to create a basic column grid whose columns are arranged one above the other on smartphones and narrow tablets and next to each other from medium screen sizes.
+
+If the elements are not simply to be arranged on top of each other on the tablet, the arrangement can be changed with the device grid class `.col-sm-x`:
+
+bootstrap-layout-2.html
