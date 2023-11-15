@@ -150,7 +150,7 @@ HTML basic structure without bootstrap:
  
 The same website with the use of Bootstrap:
 
- [Complete Code](https://github.com/BellaMrx/The_Bootstrap_framework/tree/main/Examples/Part_3) --> **Examples/Part_3/...** 
+ [Complete Code](https://github.com/BellaMrx/The_Bootstrap_framework/tree/main/Examples/Part_4) --> **Examples/Part_4/...** 
 
    ```
    <head>
@@ -222,3 +222,29 @@ The same website with the use of Bootstrap:
    ```
 
  <img src="images/Bootstrap_part-4.png" width="800">
+
+
+With bootstraps, for example, the images are displayed side by side instead of one below the other if the screen size is wide enough. In the mobile view, the images are automatically displayed one below the other. This is an advantage of Bootstrap, as you don't have to write any media queries yourself. The viewport meta tag was added here so that zooming is possible on mobile devices.
+
+A quick overview of how the layout is realized with Bootstrap:
+
+1. First, it is determined whether the complete layout is to be defined in a fixed width with the class `.container` or in full width with the class `.container-fluid`. `.container` means that the value of `max-width` is reset at each breakpoint. With `.container-fluid`, on the other hand, `width: 100%;` applies to all breakpoints. If the content of the web page is packed in `.container`, it is displayed centered.
+
+ - the complete content of a website is packaged in this way:
+
+   ```
+    <div class="container">
+        ...
+    </div>
+   ```
+
+2. Within the containers, the rows should be defined with the class `.row` to create horizontal groups with columns.
+
+   ```
+    <div class="container">
+        <div class="row">...</div>
+        <div class="row">...</div>
+        ...
+    </div>
+   ```
+
