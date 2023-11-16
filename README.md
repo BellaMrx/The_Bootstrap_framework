@@ -284,4 +284,64 @@ The class `.col-md-x` is used to create a basic column grid whose columns are ar
 
 If the elements are not simply to be arranged on top of each other on the tablet, the arrangement can be changed with the device grid class `.col-sm-x`:
 
-bootstrap-layout-2.html
+ [Complete Code](https://github.com/BellaMrx/The_Bootstrap_framework/tree/main/Examples/Part_5) --> **Examples/Part_5/...** 
+
+   ```
+    <div class="container">
+        <div class="row">
+            <header class="col-md-12">
+                <h1>Title of the website</h1>
+                <p>Short description of the website</p>
+                <hr>
+            </header>
+        </div>
+        <div class="row">
+            <nav class="col-md-12">
+                <a href="#">Home</a> |
+                <a href="#">Reports</a> |
+                <a href="#">Links</a> |
+                <a href="#">About</a> |
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        <hr>
+        <div class="row">
+            <article class="col-sm-6 col-md-4">
+                <h2>Chicks </h2>
+                <img src="../../images/chicks_480.jpg" alt="Chicks" class="img-fluid">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Read more ...</a></p>
+            </article>
+            <article class="col-sm-6 col-md-4">
+                <h2>Flowers </h2>
+                <img src="../../images/flower_480.jpg" alt="Flowers" class="img-fluid">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Read more ...</a></p>
+            </article>
+            <article class="col-sm-12 col-md-4">
+                <h2>Clouds </h2>
+                <img src="../../images/whale_480.jpg" alt="Clouds" class="img-fluid">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Read more ...</a></p>
+            </article>
+        </div>
+        <hr>
+        <div class="row">
+            <article class="col-md-6">
+                <h2>Flora</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut. Aenean massa. <br><a href="#">Read more ...</a></p>
+            </article>
+            <article class="col-md-6">
+                <h2>Fauna</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut. Aenean massa. <br><a href="#">Read more ...</a></p>
+            </article>
+        </div>
+        <hr>
+        <div class="row">
+            <footer class="col-md-12 text-center">
+                <p>&copy; Name | <a href="#">Legal notice</a></p>
+            </footer>
+        </div>
+    </div>
+   ```
+
+ <img src="images/Bootstrap_part-5.png" width="500">
