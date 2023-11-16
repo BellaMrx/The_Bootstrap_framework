@@ -345,3 +345,8 @@ If the elements are not simply to be arranged on top of each other on the tablet
    ```
 
  <img src="images/Bootstrap_part-5.png" width="500">
+
+The display of the website is automatically adjusted again on larger screens.
+
+
+### Show and hide elements with the help of Bootstrap
