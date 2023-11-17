@@ -353,7 +353,7 @@ The display of the website is automatically adjusted again on larger screens.
 
 ### Show and hide elements with the help of Bootstrap
 
-Bootstrap provides ready-made (helper) classes for different display window sizes for showing and hiding elements. For example, to show and hide individual graphics for a smartphone version, the class `.d-none-{value}` or `.d-{value}-block` (d = display) can be used. For `value`, `sm`, `md`, `lg` and `lx` must be used according to the screen size.
+Bootstrap provides ready-made (helper) classes for different display window sizes for showing and hiding elements. For example, to show and hide individual graphics for a smartphone version, the class `.d-none-{value}` or `.d-{value}-block` (d = display) can be used. For **value*, `sm`, `md`, `lg` and `lx` must be used according to the screen size. To hide elements for small screens only, `.d-none .d-sm-block` is used: 
 
  [Complete Code](https://github.com/BellaMrx/The_Bootstrap_framework/tree/main/Examples/Part_6) --> **Examples/Part_6/...** 
 
@@ -405,4 +405,74 @@ Bootstrap provides ready-made (helper) classes for different display window size
 
 
 ## 4. Use components
-Bootstrap offers a large number of ready-made components such as icons, menus, warnings, cards, labels and navigations.
+
+Bootstrap offers a large number of ready-made components such as icons, menus, warnings, cards, labels and navigation bars.
+
+### Integrate a navigation bar
+There are several options for navigations, e.g. tabs, pills or navbars:
+
+Pills are navigation points that look like buttons. Here is an example with pills and a dropdown menu:
+
+ [Complete Code](https://github.com/BellaMrx/The_Bootstrap_framework/tree/main/Examples/Part_7) --> **Examples/Part_7/...** 
+
+   ```
+    ...
+        <div class="row">
+            <nav class="col-sm-8 col-md-8">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Links</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                          Contact</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">E-Mail</a></li>
+                            <li><a class="dropdown-item" href="#">Social Media</a></li>
+                            <li><a class="dropdown-item" href="#">Legal notice</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    ...
+   ```
+
+ <img src="images/Bootstrap_part-7a.png" width="800">
+
+Here, the navigation points were simply packed into an unordered list with the class `.nav`. The navigation points are displayed as pills with the class `.nav-pills`. The active navigation point is marked with the class `.active`.
+
+If the navigation points are to be displayed as tabs, simply change `.nav-pills` to `.nav-tabs`.
+
+ <img src="images/Bootstrap_part-7b.png" width="800">
+
+The drop-down menu is realized with the class `.drop-down` and it is controlled with `data-bs-toggle="dropdown"`.
+
+ <img src="images/Bootstrap_part-7c.png" width="800">
+
+The attributes that begin with the prefix `data`- are HTML attributes that were introduced with HTML5. This allows custom data to be saved with an HTML element without there being a defined HTML attribute for it. With `data-bs-toggle`, the element was linked to the corresponding widget, in this case the drop-down menu.
+
+It is also possible to define your own attributes, simply preceded by `data`:
+
+   ```
+    <li data-birth-year="1879">Albert Einstein</li>
+    <li data-birth-year="1856">Nikola Tesla</li>
+   ```
+
+JavaScript can be used to access the values of your own `data` attributes with `dataset`:
+
+   ```
+    let scientist = document.getElementsByTagName('li');
+    // The hyphen in HTML must be displayed in JavaScript as camel case notation birth-year = birthYear
+    console.log(scientist[0].dataset['birthYear']);
+   ```
+
+
+
+
