@@ -526,7 +526,7 @@ A complete navigation bar can be realized with `.navbar`, on which other element
 The navbar is introduced with `.navbar` and `.navbar-expand-lg` in the `nav` element. When the navigation is collapsed can be specified with `.navbar-expand-lg`, another value is also possible here instead of `lg` (`-sm`, `-md`, -`lg`, `-xl`). The navbar for the mobile version is introduced with `.navbar-toggler`. The button activates the JavaScript `colapse`, which expands the navigation bar and has the element with the ID `#navbarSupportContent` as target with `data-bs-target`. The icon with the three dashes is inserted by the class `.navbar-toggler-icon`. The title is created with `.navbar-brand`.
 
 
-#### Cards
+### Cards
 Cards are flexible and expandable containers with many options for content and with headers and footers.
 
  [Complete Code](https://github.com/BellaMrx/The_Bootstrap_framework/tree/main/Examples/Part_9) --> **Examples/Part_9/...** 
@@ -597,9 +597,31 @@ Cards are flexible and expandable containers with many options for content and w
 
 Cards are created with the class `.card`. With `.card-body` another block can be created within `.card` to create a padding within a card container. The size of a card container is always 100% unless otherwise specified.
 
+## The End
+
 This is just an introduction to using the Bootstrap framework, there are many more ways to create simple and beautiful website layouts. A complete overview can be found in the very good documentation of [Bootstrap](https://getbootstrap.com/). 
 
+If you don't know HTML, CSS or JavaScript yet, have a look here:
+  - [WebDevelopment Basics](https://github.com/BellaMrx/WebDevelopment_Basics) - Basics Guide for web developers
+  - [HTML Guide](https://github.com/BellaMrx/HTML_Guide) - Detailed guide about HTML5 (all basics for HTML)
+  - [HTML Cheat Sheets](https://github.com/BellaMrx/HTML_Cheat_Sheets) - All HTML5 elements and their attributes
+  - [CSS Guide](https://github.com/BellaMrx/CSS_Guide) - Detailed guide about CSS (Introduction to CSS, CSS Selectors, Inheritance and the cascade, CSS Box Model, CSS Positioning, Flexbox, Responsive Web Design, CSS Grid Layout, Styling with CSS, Testing and Organizing) 
+  - [Sass and SCSS Basic Guide](https://github.com/BellaMrx/Sass_and_SCSS) - An introduction to the CSS preprocessor Sass
 
+  **JavaScript Basics:**
+
+  1. [JS Introduction](https://github.com/BellaMrx/JS_introduction) - An introduction to JavaScript
+  2. [Arrays, functions, objects in JS](https://github.com/BellaMrx/Arrays_functions_objects_in_JS) - Introduction: Arrays, functions and objects in JavaScript
+  3. [DOM - Document Object Model](https://github.com/BellaMrx/DOM_Document-Object-Model) -  Introduction to the **DOM** and the **DOM** manipulation - Change web pages dynamically  
+  4. [Introduction to Web APIs](https://github.com/BellaMrx/JavaScript_Introduction-To-Web-APIs)
+  5. [Introduction to Ajax and jQuery](https://github.com/BellaMrx/JavaScript_Introduction_to_Ajax_and_jQuery)
+  6. You are here --> [Introduction to Bootstrap framework](https://github.com/BellaMrx/The_Bootstrap_framework)
+
+Or just visit my GitHub profile, you can find all guides/tutorials there [BellaMrx](https://github.com/BellaMrx)
+
+Thanks for the attention.
+
+#### This is the end, beautiful friend... ;)
 
 
 
