@@ -408,7 +408,7 @@ Bootstrap provides ready-made (helper) classes for different display window size
 
 Bootstrap offers a large number of ready-made components such as icons, menus, warnings, cards, labels and navigation bars.
 
-### Integrate a navigation bar
+### Integrate a navigation
 There are several options for navigations, e.g. tabs, pills or navbars:
 
 Pills are navigation points that look like buttons. Here is an example with pills and a dropdown menu:
@@ -472,6 +472,137 @@ JavaScript can be used to access the values of your own `data` attributes with `
     // The hyphen in HTML must be displayed in JavaScript as camel case notation birth-year = birthYear
     console.log(scientist[0].dataset['birthYear']);
    ```
+
+
+#### Add a navigation bar
+A complete navigation bar can be realized with `.navbar`, on which other elements such as input fields, buttons and drop-down menus can also be placed. On wide screens, the navigation is displayed as a bar and on smartphones it is minimized and can be folded in and out using a button.
+
+ [Complete Code](https://github.com/BellaMrx/The_Bootstrap_framework/tree/main/Examples/Part_8) --> **Examples/Part_8/...** 
+
+   ```
+    ...
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light col-sm-12 mb-2">
+                <a class="navbar-brand" href="#">Navigation</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home 
+                      </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                        Contact
+                      </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">E-Mail</a>
+                                <a class="dropdown-item" href="#">Social Media</a>
+                                <a class="dropdown-item" href="#">Legal notice</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    ...
+   ```
+
+ <img src="images/Bootstrap_part-8a.png" width="800">
+
+ <img src="images/Bootstrap_part-8b.PNG" width="300">
+
+The navbar is introduced with `.navbar` and `.navbar-expand-lg` in the `nav` element. When the navigation is collapsed can be specified with `.navbar-expand-lg`, another value is also possible here instead of `lg` (`-sm`, `-md`, -`lg`, `-xl`). The navbar for the mobile version is introduced with `.navbar-toggler`. The button activates the JavaScript `colapse`, which expands the navigation bar and has the element with the ID `#navbarSupportContent` as target with `data-bs-target`. The icon with the three dashes is inserted by the class `.navbar-toggler-icon`. The title is created with `.navbar-brand`.
+
+
+#### Cards
+Cards are flexible and expandable containers with many options for content and with headers and footers.
+
+ [Complete Code](https://github.com/BellaMrx/The_Bootstrap_framework/tree/main/Examples/Part_9) --> **Examples/Part_9/...** 
+
+   ```
+    ...
+        <div class="row">
+            <article class="col-sm-6 col-md-4">
+                <div class="card">
+                    <!--<div class="card-body">-->
+                    <h5 class="card-header">Chicks </h5>
+                    <img src="../../images/chicks_480.jpg" alt="Chicks" class=" card-img-top img-fluid d-none d-sm-block">
+                    <p class="card-text m-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+                    <a href="#" class="btn btn-primary">Read more ...</a>
+                    <!--</div>-->
+                </div>
+            </article>
+            <article class="col-sm-6 col-md-4">
+                <div class="card">
+                    <!--<div class="card-body">-->
+                    <h5 class="card-header">Flowers </h5>
+                    <img src="../../images/flower_480.jpg" alt="Flowers" class="card-img-top img-fluid d-none d-sm-block">
+                    <p class="card-text m-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <a href="#" class="btn btn-primary">Read more ...</a>
+                    <!-- </div>-->
+                </div>
+            </article>
+            <article class="col-sm-12 col-md-4">
+                <div class="card">
+                    <!-- <div class="card-body">-->
+                    <h5 class="card-header">Clouds </h5>
+                    <img src="../../images/whale_480.jpg" alt="Clouds" class="card-img-top img-fluid d-none d-sm-block">
+                    <p class="card-text m-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <a href="#" class="btn btn-primary">Read more ...</a>
+                    <!--</div>-->
+                </div>
+            </article>
+        </div>
+        <hr>
+        <div class="row">
+            <article class="col-md-6">
+                <div class="card">
+                    <!--<div class="card-body">-->
+                    <h5 class="card-header">Flora</h5>
+                    <p class="card-text m-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut. Aenean massa.</p>
+                    <a href="#" class="btn btn-primary">Read more ...</a>
+                    <!--</div>-->
+                </div>
+            </article>
+            <article class="col-md-6">
+                <div class="card">
+                    <!--div class="card-body">-->
+                    <h5 class="card-header">Fauna</h5>
+                    <p class="card-text m-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut. Aenean massa. </p>
+                    <a href="#" class="btn btn-primary">Read more ...</a>
+                    <!--</div>-->
+                </div>
+            </article>
+        </div>
+    ...
+   ```
+
+ <img src="images/Bootstrap_part-9a.png" width="800">
+
+ <img src="images/Bootstrap_part-9b.PNG" width="300">
+
+Cards are created with the class `.card`. With `.card-body` another block can be created within `.card` to create a padding within a card container. The size of a card container is always 100% unless otherwise specified.
+
+This is just an introduction to using the Bootstrap framework, there are many more ways to create simple and beautiful website layouts. A complete overview can be found in the very good documentation of [Bootstrap](https://getbootstrap.com/). 
+
+
+
+
+
 
 
 
