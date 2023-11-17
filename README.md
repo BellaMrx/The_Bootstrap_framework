@@ -17,6 +17,7 @@ Bootstrap is a ready-made CSS framework. Basically, it is a kind of construction
 
 
 ## 2. Download and integrate Bootstrap
+
 The first step is to download Bootstrap, which you can do here: [Bootstrap](https://getbootstrap.com/). To get started, the finished version is sufficient, which is already ready for use with CSS, JavaScript and fonts.
 
  <img src="images/Bootstrap_download_1.png" width="800">
@@ -350,3 +351,72 @@ The display of the website is automatically adjusted again on larger screens.
 
 
 ### Show and hide elements with the help of Bootstrap
+
+Bootstrap provides ready-made (helper) classes for different display window sizes for showing and hiding elements. For example, to show and hide individual graphics for a smartphone version, the class `.d-none-{value}` or `.d-{value}-block` (d = display) can be used. For `value`, `sm`, `md`, `lg` and `lx` must be used according to the screen size.
+
+
+ [Complete Code](https://github.com/BellaMrx/The_Bootstrap_framework/tree/main/Examples/Part_6) --> **Examples/Part_6/...** 
+
+   ```
+    <div class="container">
+        <div class="row">
+            <header class="col-md-12">
+                <h1 class="d-none d-sm-block">Title of the website</h1>
+                <p class="d-none d-sm-block">Short description of the website</p>
+                <img src="logo.png" alt="Logo" class="img-fluid d-block d-sm-none">
+                <hr>
+            </header>
+        </div>
+        <div class="row">
+            <nav class="col-md-12">
+                <a href="#">Home</a> |
+                <a href="#">Reports</a> |
+                <a href="#">Links</a> |
+                <a href="#">About</a> |
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        <hr>
+        <div class="row">
+            <article class="col-sm-6 col-md-4">
+                <h2>Chicks </h2>
+                <img src="../../images/chicks_480.jpg" alt="Chicks" class="img-fluid d-none d-sm-block">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Read more ...</a></p>
+            </article>
+            <article class="col-sm-6 col-md-4">
+                <h2>Flowers </h2>
+                <img src="../../images/flower_480.jpg" alt="Flowers" class="img-fluid d-none d-sm-block">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Read more ...</a></p>
+            </article>
+            <article class="col-sm-12 col-md-4">
+                <h2>Clouds </h2>
+                <img src="../../images/whale_480.jpg" alt="Clouds" class="img-fluid d-none d-sm-block">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Read more ...</a></p>
+            </article>
+        </div>
+        <hr>
+        <div class="row">
+            <article class="col-md-6">
+                <h2>Flora</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut. Aenean massa. <br><a href="#">Read more ...</a></p>
+            </article>
+            <article class="col-md-6">
+                <h2>Fauna</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut. Aenean massa. <br><a href="#">Read more ...</a></p>
+            </article>
+        </div>
+        <hr>
+        <div class="row">
+            <footer class="col-md-12 text-center">
+                <p>&copy; Name | <a href="#">Legal notice</a></p>
+            </footer>
+        </div>
+    </div>
+   ```
+
+ <img src="images/Bootstrap_part-6a.png" width="800">
+
+ <img src="images/Bootstrap_part-6b.png" width="300">
+
