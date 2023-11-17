@@ -6,6 +6,7 @@
  1. What is Bootstrap?
  2. Download and integrate Bootstrap
  3. Create layouts with Bootstrap
+ 4. Use components
  
  
  
@@ -354,10 +355,10 @@ The display of the website is automatically adjusted again on larger screens.
 
 Bootstrap provides ready-made (helper) classes for different display window sizes for showing and hiding elements. For example, to show and hide individual graphics for a smartphone version, the class `.d-none-{value}` or `.d-{value}-block` (d = display) can be used. For `value`, `sm`, `md`, `lg` and `lx` must be used according to the screen size.
 
-
  [Complete Code](https://github.com/BellaMrx/The_Bootstrap_framework/tree/main/Examples/Part_6) --> **Examples/Part_6/...** 
 
    ```
+    ...
     <div class="container">
         <div class="row">
             <header class="col-md-12">
@@ -394,29 +395,14 @@ Bootstrap provides ready-made (helper) classes for different display window size
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <a href="#">Read more ...</a></p>
             </article>
         </div>
-        <hr>
-        <div class="row">
-            <article class="col-md-6">
-                <h2>Flora</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut. Aenean massa. <br><a href="#">Read more ...</a></p>
-            </article>
-            <article class="col-md-6">
-                <h2>Fauna</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut. Aenean massa. <br><a href="#">Read more ...</a></p>
-            </article>
-        </div>
-        <hr>
-        <div class="row">
-            <footer class="col-md-12 text-center">
-                <p>&copy; Name | <a href="#">Legal notice</a></p>
-            </footer>
-        </div>
+     ...
     </div>
    ```
 
  <img src="images/Bootstrap_part-6a.png" width="800">
 
- <img src="images/Bootstrap_part-6b.png" width="300">
+ <img src="images/Bootstrap_part-6b.PNG" width="300">
 
+
+## 4. Use components
+Bootstrap offers a large number of ready-made components such as icons, menus, warnings, cards, labels and navigations.
