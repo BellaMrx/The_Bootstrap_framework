@@ -275,7 +275,7 @@ Bootstrap offers even more raster classes besides `.col-md-x`. There are also th
 
 | Class Prefix | Device       |
 | ------------ | ------------ |
-| `.col-`      | extra-small devices such as smartphones with a screen smaller than 576 px |
+| `.col-xs-`      | extra-small devices such as smartphones with a screen smaller than 576 px |
 | `.col-sm-`   | small devices such as smartphones or tablets with a screen size greater than or equal to 576 px |
 | `.col-md-`   | medium-sized devices such as tablets or desktop PCs with a screen size greater than or equal to 768px |
 | `.col-lg-`   | large devices such as tablets or desktop PCs with a screen size greater than or equal to 960 px |
@@ -353,7 +353,7 @@ The display of the website is automatically adjusted again on larger screens.
 
 ### Show and hide elements with the help of Bootstrap
 
-Bootstrap provides ready-made (helper) classes for different display window sizes for showing and hiding elements. For example, to show and hide individual graphics for a smartphone version, the class `.d-none-{value}` or `.d-{value}-block` (d = display) can be used. For **value*, `sm`, `md`, `lg` and `lx` must be used according to the screen size. To hide elements for small screens only, `.d-none .d-sm-block` is used: 
+Bootstrap provides ready-made (helper) classes for different display window sizes for showing and hiding elements. For example, to show and hide individual graphics for a smartphone version, the class `.d-none-{value}` or `.d-{value}-block` (d = display) can be used. For *value*, `sm`, `md`, `lg` and `lx` must be used according to the screen size. To hide elements for small screens only, `.d-none .d-sm-block` is used: 
 
  [Complete Code](https://github.com/BellaMrx/The_Bootstrap_framework/tree/main/Examples/Part_6) --> **Examples/Part_6/...** 
 
